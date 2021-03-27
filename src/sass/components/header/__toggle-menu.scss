@@ -1,0 +1,35 @@
+.header__toggle-menu {
+  @include centeredFlex;
+
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+// .header__burger::after,
+// .header__burger::before,
+.header__burger {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: $colorBurger;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  position: relative;
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: $colorBurger;
+    position: absolute;
+  }
+  &::before {
+    top: -7px;
+  }
+  &::after {
+    bottom: -7px;
+  }
+}

@@ -1,0 +1,25 @@
+.sub-title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $colorSubTitle;
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: $colorSubTitle;
+    display: block;
+    margin-right: 20px;
+  }
+  &--mode {
+    color: $colorSubTitleMod;
+  }
+  &--mode::before {
+    background-color: $colorSubTitleMod;
+  }
+}

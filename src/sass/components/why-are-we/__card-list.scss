@@ -1,0 +1,47 @@
+.why-are-we__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 44px;
+}
+.why-are-we__card {
+  @include centeredFlex;
+  flex-direction: column;
+  background-color: $colorBgCard;
+  padding: 20px 30px;
+  height: 133px;
+  width: calc((100% - 30px) / 2);
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  &:nth-child(2n) {
+    margin-top: 30px;
+  }
+}
+
+.why-are-we__card-number {
+  position: relative;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.357;
+  letter-spacing: 0.05em;
+  color: $colorCardText;
+}
+
+.why-are-we__card-plus {
+  position: absolute;
+  top: 7px;
+  right: -10px;
+  color: $colorDeсor;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.why-are-we__card-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  color: $colorCardText;
+}

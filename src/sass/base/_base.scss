@@ -1,0 +1,39 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: $colorText;
+  position: relative;
+}
+section {
+  padding: 84px 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+textarea {
+  resize: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+@import './_container';
+@import './_sub-title';
+@import './_link-btn';

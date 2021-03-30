@@ -1,19 +1,30 @@
-.price__wrapper-table {
-  @media (max-width: 1280px) {
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+.price__table:first-child {
+  @media (max-width: 1999px) {
+    margin-bottom: 20px;
   }
 }
 
-.price__table {
-  width: 100%;
-  padding: 30px;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  color: $colorTextLight;
+.price__row {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 
-  tr {
-    display: flex;
-    justify-content: space-between;
+.price__line {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-bottom: 3px;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $colorBgLine;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 }
